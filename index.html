@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div id="gameWrapper">
+        <header>
+            <img src="assets/images/logo.svg" alt="Rock, Paper, Scissors Logo">
+
+            <div class="score">
+                <span>SCORE</span>
+                <p id="playerScore">0</p>
+            </div>
+        </header>
+
+        <div id="stepOne">
+            <div class="step-one-option paper">
+                <div class="background" data-option="paper"></div>
+            </div>
+            <div class="step-one-option scissors">
+                <div class="background" data-option="scissors"></div>
+            </div>
+            <div class="step-one-option rock">
+                <div class="background" data-option="rock"></div>
+            </div>
+        </div>
+
+        <div id="stepTwo" style="display: none;">
+            <div class="selected-option mobile-display1">
+                <h3>YOU PICKED</h3>
+                <div class="option-display" id="displayUserOption">
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="result mobile-display2" style="display: none;">
+                <h1 id="resultText"></h1>
+                <button id="playAgain">Play Again</button>
+            </div>
+            <div class="selected-option mobile-display3">
+                <h3>THE HOUSE PICKED</h3>
+                <div class="option-display" id="displayHouseOption">
+                    <div class="background"></div>
+                </div>
+            </div>
+        </div>
+
+        <button id="showRules">RULES</button>
+        <div id="rulesModal">
+            <div class="rules-container">
+                <div class="rules-title">Rules</div>
+                <div class="cross-btn">
+                    <img src="assets/images/rules-close.svg" alt="close">
+                </div>
+                <div class="rules-img"><img src="assets/images/rules.svg" alt="rules"></div>
+            </div>
+        </div>
+            
+        </div>
+     
+    </div>
+    
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
